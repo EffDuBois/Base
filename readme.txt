@@ -5,3 +5,5 @@ Table of contents
 #################
 1. Vs code stuff
 2. Java stuff
+3. Javascript stuff
+4. Html/css stuff
