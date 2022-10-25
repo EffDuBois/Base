@@ -1,5 +1,8 @@
 # codf04bc6bab21fb7b20093f3
 
+This is a solo project I did under the scrimba javascript course
+
+
 ## About Scrimba
 
 At Scrimba our goal is to create the best possible coding school at the cost of a gym membership! 💜
