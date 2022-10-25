@@ -1,0 +1,36 @@
+<html>
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="count-flex">
+                <div class="disp-card">
+                    <h3 class="head">HOME</h3>
+                    <div class="score-card">
+                        <h1 class="score" id="score-home">0</h1>
+                    </div>
+                    <div class="buttons">
+                        <button onclick="increasehome(1)">+1</button>
+                        <button onclick="increasehome(2)">+2</button>
+                        <button onclick="increasehome(3)">+3</button>
+                    </div>
+                </div>
+                <div class="disp-card">
+                    <h3 class="head">GUEST</h3>
+                    <div class="score-card">
+                        <h1 class="score" id="score-guest">0</h1>
+                    </div>
+                    <div class="buttons">
+                        <button onclick="increaseGuest(1)">+1</button>
+                        <button onclick="increaseGuest(2)">+2</button>
+                        <button onclick="increaseGuest(3)">+3</button>
+                    </div>
+                </div>
+            </div>
+            <h3 id="leader-el">Leader: None</h3>
+            <button class="menu-btn" onclick="reset()">New game</button>
+        </div>
+        <script src="index.js"></script>
+    </body>
+</html>
