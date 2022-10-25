@@ -4,15 +4,27 @@
 }
 
 body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     margin: 0;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-align: center;
+    background: radial-gradient(
+        circle,
+        #9CA3AF 50%,
+        #4B5563
+    )
 }
+
 
 .container {
     width: 575px;
     padding: 30px;
     background: #1B244A;
+    border-radius: 15px;
+    border: #EEEEEE solid 5px;
 }
 
 .count-flex {
