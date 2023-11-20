@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="index.css" />
+    <title>Calculator</title>
+  </head>
+  <body>
+    <div class="calc-frame">
+      <div id="display" class="display">0</div>
+
+      <button onclick="addText(this)">7</button>
+      <button onclick="addText(this)">8</button>
+      <button onclick="addText(this)">9</button>
+      <button onclick="allClear()" style="grid-column: 4/6">AC</button>
+      <button onclick="addText(this)">4</button>
+      <button onclick="addText(this)">5</button>
+      <button onclick="addText(this)">6</button>
+      <button onclick="addText(this)">+</button>
+      <button onclick="addText(this)">*</button>
+      <button onclick="addText(this)">1</button>
+      <button onclick="addText(this)">2</button>
+      <button onclick="addText(this)">3</button>
+      <button onclick="addText(this)">-</button>
+      <button onclick="addText(this)">/</button>
+      <button onclick="addText(this)">.</button>
+      <button onclick="addText(this)">0</button>
+      <button onclick="calculate()" style="grid-column: 4/6">=</button>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
