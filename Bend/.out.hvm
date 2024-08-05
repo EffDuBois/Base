@@ -1,0 +1,47 @@
+@Insert = (a ((@Insert__C1 (@Insert__C0 (a b))) b))
+
+@Insert__C0 = (a b)
+  & @List/Cons ~ (a (@List/Nil b))
+
+@Insert__C1 = ({a d} (e ({$(:[>] $(a b)) c} f)))
+  & @SwapGT ~ (b (c (d (e f))))
+
+@List/Cons = (a (b ((a (b c)) (* c))))
+
+@List/Nil = (* (a a))
+
+@Main__C0 = a
+  & @Rnd ~ (256 (10 a))
+
+@Main__C1 = a
+  & @Sort ~ (@Main__C0 a)
+
+@Rnd = (?(((* @List/Nil) @Rnd__C0) a) a)
+
+@Rnd__C0 = ($([+1] $([-1] e)) ({$(:[^] $(a {$(:[^] $(b {$(:[^] $(c {d f})) $([*32] c)})) $([/131072] b)})) $([*8192] a)} h))
+  & @List/Cons ~ (d (g h))
+  & @Rnd ~ (e (f g))
+
+@Sort = ((@Sort__C0 (@List/Nil a)) a)
+
+@Sort__C0 = (a (b d))
+  & @Insert ~ (a (c d))
+  & @Sort ~ (b c)
+
+@Sum = ((@Sum__C0 (0 a)) a)
+
+@Sum__C0 = ($(:[+] $(b c)) (a c))
+  & @Sum ~ (a b)
+
+@SwapGT = (?((@SwapGT__C0 @SwapGT__C1) a) a)
+
+@SwapGT__C0 = (a (b (c e)))
+  & @List/Cons ~ (a (d e))
+  & @List/Cons ~ (b (c d))
+
+@SwapGT__C1 = (* (b (a (c e))))
+  & @List/Cons ~ (a (d e))
+  & @Insert ~ (b (c d))
+
+@main = a
+  & @Sum ~ (@Main__C1 a)
